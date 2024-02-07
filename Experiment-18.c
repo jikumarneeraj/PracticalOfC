@@ -1,16 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    int q=0,a;
+    int n,N,i,r,R=0;
     printf("Enter number:");
     scanf("%d",&n);
-    int N=n;
-    while (n>0)
-    {
-        a=n%10;
-        q=q+a;
+    N=n;
+    while(n!=0){
+        r=n%10;
+        R=R*10+r;
         n=n/10;
     }
-    printf("Sum of %d is =%d",N,q);
+    printf("Reverse number is = %d",R);
 }
